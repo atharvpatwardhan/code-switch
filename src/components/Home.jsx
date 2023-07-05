@@ -12,6 +12,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const Home = () => {
 
+    const rapidApiKey = import.meta.env.VITE_API_KEY;
+
+
     const languages = ['c','csharp','golang','java','javascript','python','php','ruby','visual basic'];
 
     const [inLang,setInLang] = useState('python');
@@ -29,7 +32,7 @@ export const Home = () => {
         url: 'https://code-converter.p.rapidapi.com/',
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
+          'X-RapidAPI-Key': rapidApiKey,
           'X-RapidAPI-Host': 'code-converter.p.rapidapi.com'
         },
         data: {
