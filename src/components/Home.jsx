@@ -29,7 +29,7 @@ export const Home = () => {
         url: 'https://code-converter.p.rapidapi.com/',
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': 'e74c76a960msha48c1bf5f32b505p1ba3aajsndaf09d021dda',
+          'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
           'X-RapidAPI-Host': 'code-converter.p.rapidapi.com'
         },
         data: {
